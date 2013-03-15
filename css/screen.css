@@ -1,0 +1,162 @@
+/* @override http://localhost:8888/css/screen.css */
+
+
+/*
+                     hmmmmmmdy-   :mmmm+    +mmmmmmdy:     -mmmmo  ymmh   `mmm/ hmmmmmmmm. hmms
+                     hmmh/+ymmm:  ymmmmd    +mmm//smmm:    smmmmm` :mmm.  /mmm` hmmy/////` hmms
+      :y.            hmms   dmms `mmmmmm-   +mmm   ymmy    dmmmmm:  dmmo  ymms  hmm+       hmms
+    `+mmd:           hmms  `dmmo /mmhsmms   +mmm   hmmy   :mmdommy  +mmd `mmm-  hmm+```    hmms
+   `sddddd/          hmmhooymmm- ymm+:mmm`  +mmmssymmd-   smmo-mmm. `mmm//mmd   hmmdhhh/   hmms
+  -ho....-hs`        hmmdhhhyo. .mmm. mmm/  +mmmhdmmh.   `mmm- dmm+  smmyymm+   hmmhooo:   hmms
+ /mmms` .hmmh-       hmms```    +mmmssdmmh  +mmm`:mmm-   /mmmssdmmd  -mmmmmm.   hmm+       hmms
++hdddds:hddddh-      hmms       hmmdhhhmmm. +mmm  hmmy   ymmdhhhmmm-  hmmmmy    hmm+       hmms
+``````````````       hmms      .mmm-```dmmo +mmm  :mmm: `mmm:```dmms  /mmmm/    hmmy/////` hmmh/////
+                     hmms      ommd    ommd +mmm   hmmh +mmm    ommm` `mmmm`    hmmmmmmmm. hmmmmmmmm
+*/
+
+
+/* Reset
+-------------------------------------------------------------- */
+html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,code,del,dfn,em,img,q,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;font-weight:inherit;font-style:inherit;font-size:100%;font-family:inherit;vertical-align:baseline;margin:0;padding:0;}
+table{border-collapse:separate;border-spacing:0;margin-bottom:1.4em;}
+caption,th,td{text-align:left;font-weight:400;}
+blockquote:before,blockquote:after,q:before,q:after{content:"";}
+blockquote,q{quotes:;}
+a img{border:none;}
+
+/* RWD Resets
+-------------------------------------------------------------- */
+
+html {
+  overflow-y: auto;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+
+/* Typography
+-------------------------------------------------------------- */
+body {
+	-webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-align: center;
+	color: #666666;
+	font: normal 100%/1.5 "proxima-nova-1","proxima-nova-2";
+	background-color: #4b4b4b;
+}
+
+p {
+  margin: 0 auto 1.75em;
+}
+
+h1{
+	color: #e6dfc1;
+	text-transform: uppercase;
+	font-size: 8em;
+	font-weight: bold;
+	text-shadow: 0.08em 0.08em 0 #5ea6a6;
+}
+
+
+
+
+/* Proportional Grid
+-------------------------------------------------------------- */
+@viewport {
+  width: device-width;
+}
+.container {
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1420px;
+  *zoom: 1;
+  padding: 20% 0;
+}
+
+.container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container .grid-unit{
+	position: relative;
+  margin-left:0;
+  width: 100%;
+	float: left;
+	display: inline;
+}
+
+
+.row, section{
+	clear: both;
+	width: 100%;
+	float: left;
+}
+
+
+
+/* Links
+-------------------------------------------------------------- */
+a{
+	color: #ee4938;
+	text-decoration: none;
+	-webkit-transition: color 400ms ease;
+	-moz-transition: color 400ms ease;
+	-o-transition: color 400ms ease;
+	-ms-transition: color 400ms ease;
+	transition: color 400ms ease;
+}
+
+a:hover{
+	color: #9e3a30;
+	-webkit-transition: color 70ms ease;
+	-moz-transition: color 70ms ease;
+	-o-transition: color 70ms ease;
+	-ms-transition: color 70ms ease;
+	transition: color 70ms ease;
+}
+
+
+/* Media
+-------------------------------------------------------------- */
+img{
+	max-width: 100%;
+	width: auto;
+	/*width: 100%;*/
+	margin-bottom: 1.75em;
+}
+
+
+@media screen and (min-width: 680px) {
+	.container {
+	  width: 80%;
+	}
+	/* Top-level columns */
+	.col-1 .grid-unit {	width: 100%;}
+	.col-2 .grid-unit { width: 49%; }
+	.col-3 .grid-unit { width: 32.666%; }
+	.col-4 .grid-unit { width: 49%; }
+
+	.col-1 .grid-unit {	width: 100%;}
+	.col-2 .grid-unit { width: 48%; }
+	.col-3 .grid-unit { width: 31.33333%; }
+	.col-4 .grid-unit { width: 49%; }
+
+	.col-3 .col-2.grid-unit{width: 65.332%;}
+	.container .grid-unit{margin-left:2.666%;}
+	.container .grid-unit:first-child{margin-left: 0;}
+	
+	h1{
+		color: #e6dfc1;
+		text-transform: uppercase;
+		font-size: 15.5em;
+		font-weight: bold;
+		text-shadow: 0.08em 0.08em 0 #5ea6a6;
+	}
+
+	}
