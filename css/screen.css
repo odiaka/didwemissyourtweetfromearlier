@@ -79,30 +79,6 @@ h1{
 }
 
 
-
-
-/* Links
--------------------------------------------------------------- */
-a{
-	color: #ee4938;
-	text-decoration: none;
-	-webkit-transition: color 400ms ease;
-	-moz-transition: color 400ms ease;
-	-o-transition: color 400ms ease;
-	-ms-transition: color 400ms ease;
-	transition: color 400ms ease;
-}
-
-a:hover{
-	color: #9e3a30;
-	-webkit-transition: color 70ms ease;
-	-moz-transition: color 70ms ease;
-	-o-transition: color 70ms ease;
-	-ms-transition: color 70ms ease;
-	transition: color 70ms ease;
-}
-
-
 /* Media
 -------------------------------------------------------------- */
 img{
